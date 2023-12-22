@@ -114,6 +114,7 @@ try{
         }catch (SQLException e){
     }
     }
+    
     public void cbiddetail(){
         try{
             PreparedStatement s = con.prepareStatement("SELECT * FROM tb_detail_transaksi where dibayar ='belum dibayar'");
@@ -445,7 +446,7 @@ try{
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+          // TODO add your handling code here:
         String Tampilan="yyyy-MM-dd";
         SimpleDateFormat fm=new SimpleDateFormat(Tampilan);
         String tanggal=String.valueOf(fm.format(tgl.getDate()));
@@ -596,7 +597,7 @@ try{
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-          DefaultTableModel model = (DefaultTableModel)tbl2.getModel();
+          DefaultTableModel    model = (DefaultTableModel)tbl2.getModel();
         int row=tbl2.getSelectedRow();
         model.removeRow (row);
     }//GEN-LAST:event_jButton3ActionPerformed

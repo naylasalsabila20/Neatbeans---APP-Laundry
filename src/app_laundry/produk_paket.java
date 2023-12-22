@@ -298,7 +298,7 @@ public class produk_paket extends javax.swing.JFrame {
 
     private void txtcariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcariActionPerformed
         // TODO add your handling code here:
-        tm = new DefaultTableModel (null,
+           tm = new DefaultTableModel (null,
         new Object[] {"Id Paket","Jenis","Nama Paket","Harga"});
         tblproduk.setModel(tm);
         tm.getDataVector().removeAllElements();
@@ -319,7 +319,6 @@ public class produk_paket extends javax.swing.JFrame {
         catch (Exception e){
             System.out.print("ERROR KUERI KE DATABASE:\n"+e+"\n\n");
         }
-
     }//GEN-LAST:event_txtcariActionPerformed
 
     /**
